@@ -76,8 +76,6 @@ void insertion(int *a) {
     } else {
         printf("Enter the elem to insert\n");
         scanf("%d", &elm);
-        
-        // Shifting elements to the right
         for (i = n; i > pos - 1; i--) {
             a[i] = a[i - 1];
         }
@@ -103,7 +101,6 @@ void deletion(int *a) {
     if (flag2 == 0) {
         printf("%d not found\n", elm);
     } else {
-        // Shifting elements to the left
         for (i = pos - 1; i < n - 1; i++) {
             a[i] = a[i + 1];
         }
