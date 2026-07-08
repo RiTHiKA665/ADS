@@ -6,10 +6,8 @@ void display(int*);
 void insertion(int*);
 void deletion(int*);
 void search(int*);
-
 int main() {
     int ch, *a;
-
 show:
     printf("\n");
     printf("1.Creation \n");
@@ -55,7 +53,6 @@ show:
         }
     }
     goto show;
-    
     return 0;
 }
 
@@ -70,7 +67,6 @@ void creation(int *a) {
 void insertion(int *a) {
     printf("Enter the pos to insert \n");
     scanf("%d", &pos);
-
     if (pos < 1 || pos > n + 1) {
         printf("%d is out of range\n", pos);
     } else {
@@ -84,7 +80,6 @@ void insertion(int *a) {
         printf("%d is inserted successfully \n", elm);
     }
 }
-
 void deletion(int *a) {
     printf("Enter the elm to delete \n");
     scanf("%d", &elm);
@@ -121,7 +116,6 @@ void display(int *a) {
     }
     printf("\n");
 }
-
 void search(int *a) {
     flag2 = 0;
     printf("Enter the elm to search \n");
@@ -134,7 +128,6 @@ void search(int *a) {
             break;
         }
     }
-
     if (flag2 == 0) {
         printf("%d not found\n", elm);
     }
